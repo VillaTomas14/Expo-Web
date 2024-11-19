@@ -1,0 +1,132 @@
+/* Tipografía y Reset de Estilos */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    text-align: center;
+}
+
+p, ul, li {
+    line-height: 1.6;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+    color: #777;
+}
+
+/* Imagen de perfil con hover */
+.profile-image {
+    max-width: 25%;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 20%;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+/* Estilos para Experiencia, Educación, Proyectos y Referencias */
+.job, .school, .project {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #eaeaea;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Efectos de hover para enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+.contacto {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.contact-link {
+    color: #2c3e50; 
+    text-decoration: none; /* Opcional: Remueve el subrayado del enlace */
+    font-size: 1.5rem; /* Opcional: Ajusta el tamaño del texto */
+}
+
+
+.custom-icon {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.25em;
+    }
+}

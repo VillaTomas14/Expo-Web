@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto para Contratación</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Estilos internos para el diseño del formulario -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .contact-form {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #76c7c0;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con el título principal -->
+    <header>
+        <h1>Contacto para Contratación</h1>
+    </header>
+    <main>
+        <!-- Sección del formulario de contacto -->
+        <section class="contact-form">
+            <h2>¡Contáctame para contratar mis servicios!</h2>
+            <form id="contact-form">
+                <!-- Campo de entrada para el nombre -->
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Campo de entrada para el correo electrónico -->
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Campo de entrada para el servicio requerido -->
+                <label for="service">Servicio requerido:</label>
+                <input type="text" id="service" name="service" required>
+
+                <!-- Área de texto para el mensaje -->
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <!-- Botón para enviar el formulario -->
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
